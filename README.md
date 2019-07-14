@@ -7,5 +7,5 @@ B.Eng, Harbin Institute of Technology, Automation, 2017
 ### News
 2019.5 I get my Master of Science degree in Computer Engineering from Brown University.     
 2019.5 I finish my Master thesis named [Differential Pose Estimation](https://doi.org/10.26300/at8a-a840).  
-2019.4 I accept the PhD offer from Department of Electrical and Computer Engineering, Boston University.
+2019.4 I accept the PhD offer from Department of Electrical and Computer Engineering, Boston University.       
 2018.12 I attend New England Computer Vision workshop.
