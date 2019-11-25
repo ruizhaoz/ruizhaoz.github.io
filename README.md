@@ -1,5 +1,8 @@
 ## Welcome to my page
 Hello, I am Ruizhao Zhu. I am incoming first year Ph.D student at Boston University. My research interests include machine learning, computer vision and their applications in robotics. If you have any question, you can reach me at rzhu@bu.edu.
+
+I was born and raised in Beijing. Now, I am living in Boston, MA. I have also lived in Harbin (China), Deajeon (South Korea), Providence (RI, USA) for more than one year respectively.
+
 ### Education
 Ph.D, Boston University, Electrical Engineering, 2024(expected)      
 Sc.M, Brown University, Computer Engineering, 2019    
