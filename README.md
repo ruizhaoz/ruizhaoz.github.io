@@ -1,5 +1,5 @@
 ## Welcome to my page
-Hello, I am Ruizhao Zhu. I am first year Ph.D student at Boston University. My research interests include machine learning applied computer vision, more specifically, few-shot learning and meta learning. If you have any question, you can reach me at rzhu@bu.edu.
+Hello, I am Ruizhao Zhu. I am second year Ph.D candidate at Boston University. My research interests include machine learning applied computer vision, more specifically, few-shot learning and meta learning. If you have any question, you can reach me at rzhu@bu.edu.
 
 I was born and raised in Beijing, China. Now, I am living in Boston, MA. I have also lived in Harbin (China), Deajeon (South Korea), Providence (RI, USA) for more than one year respectively.
 
