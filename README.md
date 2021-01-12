@@ -8,6 +8,8 @@ Ph.D, Boston University, Electrical Engineering, 2024(expected)
 Sc.M, Brown University, Computer Engineering, 2019    
 B.Eng, Harbin Institute of Technology, Automation, 2017    
 ### News
+2020.10 One paper about explanable AI accepted by ICPR XAI workshop.
+2020.9 Teaching Fellow of EC523 Deep Learning. 
 2019.9 I start the PhD program at Data Science and Machine Learning Group, Department of Electrical and Computer Engineering, Boston University.      
 2019.5 I get my Master of Science degree in Computer Engineering from Brown University.     
 2019.5 I finish my Master thesis named [Differential Pose Estimation](https://doi.org/10.26300/at8a-a840).  
