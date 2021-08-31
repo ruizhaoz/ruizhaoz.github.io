@@ -5,8 +5,6 @@ I was born and raised in Beijing, China. Now, I am living in Boston, MA. I have 
 
 ### Education
 Ph.D, Boston University, Electrical Engineering, 2024(expected)      
-Sc.M, Brown University, Computer Engineering, 2019    
-B.Eng, Harbin Institute of Technology, Automation, 2017    
 ### News
 2021.5 Two paper accepted by ICML as short talk.  
 2021.2 Teaching Fellow of EC414 Introduction to Machine Learning.  
