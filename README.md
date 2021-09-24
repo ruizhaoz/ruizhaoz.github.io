@@ -6,7 +6,7 @@ I was born and raised in Beijing, China. Now, I am living in Boston, MA. I have 
 ### Education
 Ph.D, Boston University, Electrical Engineering, 2024(expected)      
 ### News
-2021.5 Two paper accepted by ICML as short talk.  
+2021.5 Two paper accepted by ICML as short talk, [MOML](http://proceedings.mlr.press/v139/acar21b.html), [PFL](http://proceedings.mlr.press/v139/acar21a/acar21a.pdf).  
 2021.2 Teaching Fellow of EC414 Introduction to Machine Learning.  
 2020.10 One paper about [explanable AI](https://link.springer.com/book/10.1007/978-3-030-68796-0) accepted by ICPR XAI workshop.  
 2020.9 Teaching Fellow of EC523 Deep Learning.  
