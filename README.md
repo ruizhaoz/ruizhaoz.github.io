@@ -1,10 +1,14 @@
 ## Welcome to my page
-Hello, I am Ruizhao Zhu. I am second year Ph.D candidate at Boston University. My research interests include machine learning applied computer vision, more specifically, few-shot learning and meta learning. If you have any question, you can reach me at rzhu@bu.edu.
+Hello, I am Ruizhao Zhu. I am third year Ph.D candidate at Boston University. My research interests include machine learning applied computer vision, more specifically, few-shot learning and meta learning. If you have any question, you can reach me at rzhu@bu.edu.
 
 I was born and raised in Beijing, China. Now, I am living in Boston, MA. I have also lived in Harbin (China), Deajeon (South Korea), Providence (RI, USA) for more than one year respectively. 
 
 ### Education
-Ph.D, Boston University, Electrical Engineering, 2024(expected)      
+Ph.D, Boston University, Electrical Engineering, 2024(expected)
+
+### Recent project
+2021.9 This semester I am working on two projects: 1. interpertable few-shot leanring; 2. efficient imitation learning for autonomous driving.
+
 ### News
 2021.5 Two paper accepted by ICML as short talk, [MOML](http://proceedings.mlr.press/v139/acar21b.html), [PFL](http://proceedings.mlr.press/v139/acar21a/acar21a.pdf).  
 2021.2 Teaching Fellow of EC414 Introduction to Machine Learning.  
