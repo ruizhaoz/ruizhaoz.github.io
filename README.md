@@ -10,7 +10,7 @@ Ph.D, Boston University, Electrical Engineering, 2024(expected)
 2021.9 This semester I am working on two projects: 1. interpertable few-shot leanring; 2. efficient imitation learning for autonomous driving.
 
 ### News
-2022.3 One paper accepted by CVPR 2022.  
+2022.3 One paper about autonomous driving accepted by CVPR 2022, [SelfD](https://arxiv.org/abs/2204.10320),.  
 2021.6 - 2021.8 I work at Bosch Research as a Research Intern in Machine Learning.  
 2021.5 Two paper accepted by ICML as short talk, [MOML](http://proceedings.mlr.press/v139/acar21b.html), [PFL](http://proceedings.mlr.press/v139/acar21a/acar21a.pdf).  
 2021.2 Teaching Fellow of EC414 Introduction to Machine Learning.  
