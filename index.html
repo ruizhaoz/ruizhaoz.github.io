@@ -1,459 +1,388 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruizhao Zhu</title>
+  <meta name="author" content="Ruizhao Zhu">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --accent: #f59e0b;
+      --bg: #fafafa;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-secondary: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.04);
+      --shadow-lg: 0 10px 25px rgba(0,0,0,0.08);
+      --radius: 12px;
+    }
 
-    <title>Ruizhao Zhu</title>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <meta name="author" content="Ruizhao Zhu">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Ruizhao Zhu
-                </p>
-                <p>I am an applied scientist at AWS working on LLM applications. I obtained my PhD degree at Boston University, advised by Prof. <a
-                      href="https://scholar.google.com/citations?user=S4z3uzMAAAAJ&hl=en/">Venkatesh Saligrama</a>.
-                  I also work with Prof. <a
-                      href="https://eshed1.github.io/">Eshed Ohn-Bar</a>.
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
 
-                  My research is mainly about efficient training
-                  for deep leanring algorithm and its application on computer vision and autonomous driving.
-                    Prior to BU, I got my Master degree at Brown University working with Prof. <a href="https://scholar.google.com/citations?user=R2og0AoAAAAJ&hl=en/">Benjamin Kimia</a> on vision navigation.
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      padding: 48px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 32px;
+    }
 
-                </p>
-                <p>
-                  I was fortunate to interned with Computer Vision team at AWS with  <a href="https://www.ytzhang.net/">Yuting Zhang</a>, <a href="https://scholar.google.com/citations?user=YiKkiQMAAAAJ&hl=en">Qi Dong</a> and <a href="https://pages.ucsd.edu/~ztu/">Zhuowen Tu</a>.
-                  I was also interned at Dataminr, Bosch Research and Duke University before.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:ruizhao1003@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=otVAkGkAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/ruizhaoz/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/rzhu.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/rzhu.png" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in efficient machine learning and its applications in computer vision and autonomous driving.
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    .hero-text { flex: 1; }
 
+    .hero-text h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
 
+    .hero-text p {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
 
-          <tr onmouseout="lwr_stop()" onmouseover="lwr_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='anyd_image'>
-                    <img src='images/cs.png' width="160"></div>
-                  <img src='images/cs.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function npil_start() {
-                    document.getElementById('lwr_image').style.opacity = "1";
-                  }
+    .hero-text a { color: var(--primary); text-decoration: none; transition: color 0.2s; }
+    .hero-text a:hover { color: var(--accent); }
 
-                  function npil_stop() {
-                    document.getElementById('lwr_image').style.opacity = "0";
-                  }
-                  npil_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://ruizhaoz.github.io/">
-                  <span class="papertitle"> A new perspective about knowledge distillation </span>
-                </a>
-                <br>
-                <strong>Ruizhao Zhu</strong>, Venkatesh Saligrama,
-<!--                <a href="https://"></a>,-->
-                <br>
-                <em>under submission</em>, 2024
-                <br>
-<!--                 <a href="https://any-d.github.io/">project page</a> / -->
-<!--                 <a href="https://any-d.github.io/#method_video">video</a> / -->
-                <a href="https://ruizhaoz.github.io/">paper (Coming Soon!)</a>
-                <p></p>
-                <p>
-                We introduce a new knowledge distillation framwork that can be applied to many knowledge distillation problems.
-                </p>
-              </td>
-            </tr>
+    .hero-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: var(--shadow-md);
+      flex-shrink: 0;
+    }
 
-           <tr onmouseout="dcl_stop()" onmouseover="dcl_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='anyd_image'>
-                    <img src='images/dcl.png' width="160"></div>
-                  <img src='images/dcl.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function npil_start() {
-                    document.getElementById('dcl_image').style.opacity = "1";
-                  }
+    .links {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
 
-                  function npil_stop() {
-                    document.getElementById('dcl_image').style.opacity = "0";
-                  }
-                  npil_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://ruizhaoz.github.io/">
-                  <span class="papertitle">Deep Companion Learning: Enhancing Generalization Through Historical Consistency</span>
-                </a>
-                <br>
-                <strong>Ruizhao Zhu</strong>, Venkatesh Saligrama,
-<!--                <a href="https://"></a>,-->
-                <br>
-                <em>ECCV</em>, 2024
-                <br>
-<!--                 <a href="https://any-d.github.io/">project page</a> / -->
-<!--                 <a href="https://any-d.github.io/#method_video">video</a> / -->
-                <a href="https://ruizhaoz.github.io/">paper (Coming Soon!)</a>
-                <p></p>
-                <p>
-                Deep Companion Learing (DCL) enhances generalization on training a deep neural networks in many settings.
-                </p>
-              </td>
-            </tr>
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
 
-            
+    .links a:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+      color: #fff;
+    }
 
-            <tr onmouseout="anyd_stop()" onmouseover="anyd_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='anyd_image'>
-                    <img src='images/anyd.png' width="160"></div>
-                  <img src='images/anyd.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function npil_start() {
-                    document.getElementById('anyd_image').style.opacity = "1";
-                  }
+    .section {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 36px 48px;
+      margin-bottom: 24px;
+      transition: box-shadow 0.2s;
+    }
 
-                  function npil_stop() {
-                    document.getElementById('anyd_image').style.opacity = "0";
-                  }
-                  npil_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://any-d.github.io/">
-                  <span class="papertitle">Learning to Drive Anywhere</span>
-                </a>
-                <br>
-                <strong>Ruizhao Zhu</strong>, Peng Huang, Eshed Ohn-Bar, Venkatesh Saligrama,
-<!--                <a href="https://"></a>,-->
-                <br>
-                <em>CoRL</em>, 2023
-                <br>
-                <a href="https://any-d.github.io/">project page</a> /
-                <a href="https://any-d.github.io/#method_video">video</a> /
-                <a href="https://arxiv.org/abs/2309.12295">paper</a>
-                <p></p>
-                <p>
-                Anyd learns a unified driving model across the world, solving socially heterogeneous cases like Left-hand driving and Pittsburgh left.
-                </p>
-              </td>
-            </tr>
+    .section:hover { box-shadow: var(--shadow-md); }
 
+    .section h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
 
-            <tr onmouseout="dop_stop()" onmouseover="dop_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='dop_image'>
-                    <img src='images/DOP2.png' width="160"></div>
-                  <img src='images/DOP1.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function npil_start() {
-                    document.getElementById('dop_image').style.opacity = "1";
-                  }
+    .section-intro {
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
 
-                  function npil_stop() {
-                    document.getElementById('dop_image').style.opacity = "0";
-                  }
-                  npil_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2207.07110">
-                  <span class="papertitle">Fine-grained Few-shot Recognition by Deep Object Parsing</span>
-                </a>
-                <br>
-                <strong>Ruizhao Zhu</strong>, Pengkai Zhu, Samarth Mishra, Venkatesh Saligrama,
-<!--                <a href="https://"></a>,-->
-                <br>
-                <em>CVPRW, 2022.  BMVC, 2023.</em>
-                <br>
+    .paper {
+      display: flex;
+      gap: 24px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      transition: transform 0.15s;
+    }
 
-                <a href="https://arxiv.org/abs/2207.07110">paper</a>
-                <p></p>
-                <p>
-                DOP can automatically parse a object into semantically salient parts. Fine-Grained Few-shot learning get SOTA performance utilizing such representations.
-                </p>
-              </td>
-            </tr>
+    .paper:last-child { border-bottom: none; }
+    .paper:hover { transform: translateX(4px); }
 
+    .paper-img {
+      width: 160px;
+      min-width: 160px;
+      display: flex;
+      align-items: center;
+    }
 
-              <tr onmouseout="cvpr_2022_stop()" onmouseover="cvpr_2022_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='cvpr_2022_video'><video width=100% muted autoplay loop>
-                        <source src="images/selfd_video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <div id='cvpr_2022_still'><img src='images/selfd_f1.png' width=100%></div>
-                  </div>
-                  <script type="text/javascript">
-                    function cvpr_2022_start() {
-                      document.getElementById('cvpr_2022_video').style.display = 'inline';
-                      document.getElementById('cvpr_2022_still').style.display = 'none';
-                    }
+    .paper-img img, .paper-img video {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
 
-                    function cvpr_2022_stop() {
-                      document.getElementById('cvpr_2022_video').style.display = 'none';
-                      document.getElementById('cvpr_2022_still').style.display = 'inline';
-                    }
-                    cvpr_2022_stop()
-                  </script>
-                </td>
+    .paper-info { flex: 1; }
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_SelfD_Self-Learning_Large-Scale_Driving_Policies_From_the_Web_CVPR_2022_paper.pdf">
-                    <span class="papertitle">SelfD: Self-Learning Large-Scale Driving Policies From the Web</span>
-                  </a>
-<!--                <td-->
-<!--                  style="padding-left:20px;padding-right: 20px; padding-top:10px;padding-bottom: 10px;width:75%;vertical-align:middle">-->
-<!--                  <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_SelfD_Self-Learning_Large-Scale_Driving_Policies_From_the_Web_CVPR_2022_paper.pdf">-->
-<!--                    <papertitle>SelfD: Self-Learning Large-Scale Driving Policies From the Web-->
-<!--                      </papertitle>-->
-<!--                  </a>-->
-                  <br>
-                  Jimuyang Zhang,
-                  <strong>Ruizhao Zhu</strong>,
-                  Eshed Ohn-Bar
-                  <br>
-                  <em>CVPR</em>, 2022
-                  <br>
-                  <a href="https://arxiv.org/pdf/2204.10320.pdf">paper</a> &nbsp/&nbsp
-                  <a href="https://www.youtube.com/watch?v=nWhdxx_9o58">video</a>
-                  <p></p>
-                  <p>SelfD is a new semi-supervised framework learning scalable driving by utilizing large amounts of online monocular images.
-                  </p>
-                </td>
-              </tr>
+    .paper-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
 
-            <tr onmouseout="moml_stop()" onmouseover="moml_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='moml_image'>
-                    <img src='images/MOML.png' width="160"></div>
-                  <img src='images/MOML.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function npil_start() {
-                    document.getElementById('moml_image').style.opacity = "1";
-                  }
+    .paper-title:hover { color: var(--accent); }
 
-                  function npil_stop() {
-                    document.getElementById('moml_image').style.opacity = "0";
-                  }
-                  npil_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://proceedings.mlr.press/v139/acar21b.html">
-                  <span class="papertitle">Memory Efficient Online Meta Learning</span>
-                </a>
-                <br>
-                Durmus Alp Emre Acar, <strong>Ruizhao Zhu</strong>,  Venkatesh Saligrama,
-<!--                <a href="https://"></a>,-->
-                <br>
-                <em>ICML, 2021.</em>
-                <br>
+    .paper-authors {
+      color: var(--text-secondary);
+      font-size: 13px;
+      margin: 4px 0;
+    }
 
-                <a href="https://proceedings.mlr.press/v139/acar21b.html">Paper</a>
-                <p></p>
-                <p>
-                MOML debiases model updates along training. It outperform baselines on both seen and unseen task without saving historical tasks.
-                </p>
-              </td>
-            </tr>
+    .paper-venue {
+      font-style: italic;
+      color: var(--text-secondary);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
 
-            <tr onmouseout="pfl_stop()" onmouseover="pfl_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='pfl_image'>
-                    <img src='images/PFL.png' width="160"></div>
-                  <img src='images/PFL.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function npil_start() {
-                    document.getElementById('pfl_image').style.opacity = "1";
-                  }
+    .paper-links { margin: 6px 0; }
 
-                  function npil_stop() {
-                    document.getElementById('pfl_image').style.opacity = "0";
-                  }
-                  npil_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://proceedings.mlr.press/v139/acar21a/acar21a.pdf">
-                  <span class="papertitle">Debiasing Model Updates for Improving Personalized Federated Training</span>
-                </a>
-                <br>
-                Durmus Alp Emre Acar, Yue Zhao, <strong>Ruizhao Zhu</strong>, Ramon Matas Navarro, Matthew Mattina, Paul Whatmough, Venkatesh Saligrama,
-<!--                <a href="https://"></a>,-->
-                <br>
-                <em>ICML, 2021.</em>
-                <br>
+    .paper-links a {
+      font-size: 12px;
+      padding: 3px 10px;
+      background: #f1f5f9;
+      border-radius: 6px;
+      color: var(--primary);
+      text-decoration: none;
+      margin-right: 6px;
+      transition: background 0.2s;
+    }
 
-                <a href="https://proceedings.mlr.press/v139/acar21a/acar21a.pdf">Paper</a>
-                <p></p>
-                <p>
-                A new problem setting for personalized federated learning.
-                </p>
-              </td>
-            </tr>
+    .paper-links a:hover { background: #e2e8f0; }
 
+    .paper-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 8px;
+    }
 
-            <tr onmouseout="ldva_stop()" onmouseover="ldva_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='ldva_image'>
-                    <img src='images/ldva.png' width="160"></div>
-                  <img src='images/ldva.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function npil_start() {
-                    document.getElementById('ldva_image').style.opacity = "1";
-                  }
+    .teaching-item { margin-bottom: 14px; }
+    .teaching-item a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    .teaching-item a:hover { color: var(--accent); }
+    .teaching-item .role { font-size: 13px; color: var(--text-secondary); }
 
-                  function npil_stop() {
-                    document.getElementById('ldva_image').style.opacity = "0";
-                  }
-                  npil_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://link.springer.com/chapter/10.1007/978-3-030-68796-0_7">
-                  <span class="papertitle">Low Dimensional Visual Attributes: An Interpretable Image Encoding</span>
-                </a>
-                <br>
-                Pengkai Zhu,<strong>Ruizhao Zhu</strong>, Samarth Mishra, Venkatesh Saligrama
-                <br>
-                <em>ICPR workshop, 2021.</em>
-                <br>
+    .activity-group { margin-bottom: 10px; color: var(--text-secondary); }
 
-                <a href="https://link.springer.com/chapter/10.1007/978-3-030-68796-0_7">Paper</a>
-                <p></p>
-                <p>
-                An interpretable object part parsing representation.
-                </p>
-              </td>
-            </tr>
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
 
+    .footer a { color: var(--primary); text-decoration: none; }
+    .footer a:hover { color: var(--accent); }
 
-          </tbody></table>
+    @media (max-width: 700px) {
+      .hero { flex-direction: column-reverse; text-align: center; padding: 32px 24px; gap: 24px; }
+      .links { justify-content: center; }
+      .section { padding: 24px; }
+      .paper { flex-direction: column; gap: 12px; }
+      .paper-img { width: 100%; min-width: unset; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2>Teaching</h2>
-                  <p>
-                    <a href="https://www.bu.edu/academics/eng/courses/eng-ec-414/"> Boston University EC523 - Machine Learing - Spring 2021</a>
-                    <br>
-                    Graduate Teaching Fellow
-                  </p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Ruizhao Zhu</h1>
+      <p>I am an applied scientist at AWS working on LLM applications. I obtained my PhD at Boston University, advised by Prof. <a href="https://scholar.google.com/citations?user=S4z3uzMAAAAJ&hl=en/">Venkatesh Saligrama</a>. I also work with Prof. <a href="https://eshed1.github.io/">Eshed Ohn-Bar</a>.</p>
+      <p>My research is mainly about efficient training for deep learning algorithms and its application on computer vision and autonomous driving. Prior to BU, I got my Master's degree at Brown University working with Prof. <a href="https://scholar.google.com/citations?user=R2og0AoAAAAJ&hl=en/">Benjamin Kimia</a> on vision navigation.</p>
+      <p>I was fortunate to intern with the Computer Vision team at AWS with <a href="https://www.ytzhang.net/">Yuting Zhang</a>, <a href="https://scholar.google.com/citations?user=YiKkiQMAAAAJ&hl=en">Qi Dong</a> and <a href="https://pages.ucsd.edu/~ztu/">Zhuowen Tu</a>. I also interned at Dataminr, Bosch Research and Duke University.</p>
+      <div class="links">
+        <a href="mailto:ruizhao1003@gmail.com">✉ Email</a>
+        <a href="https://scholar.google.com/citations?user=otVAkGkAAAAJ&hl=en">🎓 Scholar</a>
+        <a href="https://github.com/ruizhaoz/">⌨ Github</a>
+        <a href="https://www.linkedin.com/in/ruizhao-zhu/">💼 LinkedIn</a>
+      </div>
+    </div>
+    <img src="images/rzhu.png" alt="Ruizhao Zhu" class="hero-photo">
+  </section>
 
-                  <p>
-                    <a href="https://www.bu.edu/academics/eng/courses/eng-ec-523/"> Boston University EC523 - Deep Learning - Fall 2020</a>
-                    <br>
-                    Graduate Teaching Fellow
-                  </p>
+  <section class="section" id="industry">
+    <h2>Industry</h2>
+    <p class="section-intro">I am currently an Applied Scientist at Amazon, where I work on <a href="https://aws.amazon.com/quick/">Amazon Quick Suite</a>. My work focuses on building pipelines for code generation agent and developing its corresponding chat system. These efforts span a range of LLM application techniques aimed at making AI-assisted automation more effective and intuitive.</p>
+  </section>
 
+  <section class="section" id="papers">
+    <h2>Selected Research Papers</h2>
+    <p class="section-intro">Most of publications are from my PhD works. Prior LLM era, I was interested in efficient machine learning and its applications in computer vision and autonomous driving.</p>
 
-                  <p>
-                    <a href="https://cs.brown.edu/courses/csci1430/2019_Spring/index.html"> Brown University CSCI1430 - Computer Vision - Spring 2019</a>
-                    <br>
-                    Head Teaching Assistant
-                  </p>
+    <div class="paper">
+      <div class="paper-img"><img src="images/ride.png" alt="Blind Riders"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://doi.org/10.1016/j.ijhcs.2025.103594">Navigating the Challenges of Remotely Supporting Blind Riders in Ridesharing</a>
+        <div class="paper-authors">Eshed Ohn-Bar, <strong>Ruizhao Zhu</strong>, Jimuyang Zhang, Lu Zhang</div>
+        <div class="paper-venue">International Journal of Human-Computer Studies, 2025</div>
+        <div class="paper-links"><a href="https://doi.org/10.1016/j.ijhcs.2025.103594">paper</a></div>
+        <p class="paper-desc">We study how remote sighted guides can assist blind ridesharing users with vehicle identification, entry, and exit in complex urban settings, addressing gaps left by driver-dependent support and emerging autonomous ride scenarios.</p>
+      </div>
+    </div>
 
-                  <p>
-                    <a href="https://cs.brown.edu/courses/csci1450/"> Brown University CSCI1450 - Intro to Probability for Data Science - Fall 2018</a>
-                    <br>
-                    Teaching Assistant
-                  </p>
+    <div class="paper">
+      <div class="paper-img"><img src="images/dcl.png" alt="DCL"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://ruizhaoz.github.io/">Deep Companion Learning: Enhancing Generalization Through Historical Consistency</a>
+        <div class="paper-authors"><strong>Ruizhao Zhu</strong>, Venkatesh Saligrama</div>
+        <div class="paper-venue">ECCV, 2024</div>
+        <div class="paper-links"><a href="https://ruizhaoz.github.io/">paper (Coming Soon!)</a></div>
+        <p class="paper-desc">Deep Companion Learning (DCL) enhances generalization on training deep neural networks in many settings.</p>
+      </div>
+    </div>
 
+    <div class="paper">
+      <div class="paper-img"><img src="images/anyd.png" alt="AnyD"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://any-d.github.io/">Learning to Drive Anywhere</a>
+        <div class="paper-authors"><strong>Ruizhao Zhu</strong>, Peng Huang, Eshed Ohn-Bar, Venkatesh Saligrama</div>
+        <div class="paper-venue">CoRL, 2023</div>
+        <div class="paper-links">
+          <a href="https://any-d.github.io/">project page</a>
+          <a href="https://any-d.github.io/#method_video">video</a>
+          <a href="https://arxiv.org/abs/2309.12295">paper</a>
+        </div>
+        <p class="paper-desc">AnyD learns a unified driving model across the world, solving socially heterogeneous cases like left-hand driving and Pittsburgh left.</p>
+      </div>
+    </div>
 
+    <div class="paper">
+      <div class="paper-img"><img src="images/DOP1.png" alt="DOP"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://arxiv.org/abs/2207.07110">Fine-grained Few-shot Recognition by Deep Object Parsing</a>
+        <div class="paper-authors"><strong>Ruizhao Zhu</strong>, Pengkai Zhu, Samarth Mishra, Venkatesh Saligrama</div>
+        <div class="paper-venue">CVPRW, 2022. BMVC, 2023.</div>
+        <div class="paper-links"><a href="https://arxiv.org/abs/2207.07110">paper</a></div>
+        <p class="paper-desc">DOP can automatically parse an object into semantically salient parts. Fine-grained few-shot learning achieves SOTA performance utilizing such representations.</p>
+      </div>
+    </div>
 
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="paper">
+      <div class="paper-img"><img src="images/selfd_f1.png" alt="SelfD"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_SelfD_Self-Learning_Large-Scale_Driving_Policies_From_the_Web_CVPR_2022_paper.pdf">SelfD: Self-Learning Large-Scale Driving Policies From the Web</a>
+        <div class="paper-authors">Jimuyang Zhang, <strong>Ruizhao Zhu</strong>, Eshed Ohn-Bar</div>
+        <div class="paper-venue">CVPR, 2022</div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/pdf/2204.10320.pdf">paper</a>
+          <a href="https://www.youtube.com/watch?v=nWhdxx_9o58">video</a>
+        </div>
+        <p class="paper-desc">SelfD is a new semi-supervised framework learning scalable driving by utilizing large amounts of online monocular images.</p>
+      </div>
+    </div>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2>Professional Activity</h2>
-                  <p>
-                    Internship at AWS AI (Summer 2023), Dataminr (2022), Bosch Research (2021), SF Tech (2018), Duke University (2016).
-                  </p>
-                  <p>
-                    Exchange Student at KAIST (Fall 2015, Spring 2016), UCLA (Summer 2014).
-                  </p>
-                  <p>
-                    Reviewer for CVPR, ECCV, BMVC, ICLR, ICML, NeurIPS, IJCAI, AISTATS Machine Intelligence Research.
-                  </p>
-                  <p>
-                    Volunteer for CoRL2023 ICML2021.
-                  </p>
+    <div class="paper">
+      <div class="paper-img"><img src="images/MOML.png" alt="MOML"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://proceedings.mlr.press/v139/acar21b.html">Memory Efficient Online Meta Learning</a>
+        <div class="paper-authors">Durmus Alp Emre Acar, <strong>Ruizhao Zhu</strong>, Venkatesh Saligrama</div>
+        <div class="paper-venue">ICML, 2021</div>
+        <div class="paper-links"><a href="https://proceedings.mlr.press/v139/acar21b.html">paper</a></div>
+        <p class="paper-desc">MOML debiases model updates along training. It outperforms baselines on both seen and unseen tasks without saving historical tasks.</p>
+      </div>
+    </div>
 
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="paper">
+      <div class="paper-img"><img src="images/PFL.png" alt="PFL"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://proceedings.mlr.press/v139/acar21a/acar21a.pdf">Debiasing Model Updates for Improving Personalized Federated Training</a>
+        <div class="paper-authors">Durmus Alp Emre Acar, Yue Zhao, <strong>Ruizhao Zhu</strong>, Ramon Matas Navarro, Matthew Mattina, Paul Whatmough, Venkatesh Saligrama</div>
+        <div class="paper-venue">ICML, 2021</div>
+        <div class="paper-links"><a href="https://proceedings.mlr.press/v139/acar21a/acar21a.pdf">paper</a></div>
+        <p class="paper-desc">A new problem setting for personalized federated learning.</p>
+      </div>
+    </div>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  This page is borrowed from this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
+    <div class="paper">
+      <div class="paper-img"><img src="images/ldva.png" alt="LDVA"></div>
+      <div class="paper-info">
+        <a class="paper-title" href="https://link.springer.com/chapter/10.1007/978-3-030-68796-0_7">Low Dimensional Visual Attributes: An Interpretable Image Encoding</a>
+        <div class="paper-authors">Pengkai Zhu, <strong>Ruizhao Zhu</strong>, Samarth Mishra, Venkatesh Saligrama</div>
+        <div class="paper-venue">ICPR workshop, 2021</div>
+        <div class="paper-links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-68796-0_7">paper</a></div>
+        <p class="paper-desc">An interpretable object part parsing representation.</p>
+      </div>
+    </div>
+  </section>
 
-          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=s-wbMLJL0UljOmsC68iAg0ko39TQQWNg7PCpevha-yg&cl=ffffff&w=a"></script>
-          
-        </td>
-      </tr>
-    </table>
-  </body>
+  <section class="section" id="teaching">
+    <h2>Teaching</h2>
+    <div class="teaching-item">
+      <a href="https://www.bu.edu/academics/eng/courses/eng-ec-414/">Boston University EC523 - Machine Learning - Spring 2021</a>
+      <div class="role">Graduate Teaching Fellow</div>
+    </div>
+    <div class="teaching-item">
+      <a href="https://www.bu.edu/academics/eng/courses/eng-ec-523/">Boston University EC523 - Deep Learning - Fall 2020</a>
+      <div class="role">Graduate Teaching Fellow</div>
+    </div>
+    <div class="teaching-item">
+      <a href="https://cs.brown.edu/courses/csci1430/2019_Spring/index.html">Brown University CSCI1430 - Computer Vision - Spring 2019</a>
+      <div class="role">Head Teaching Assistant</div>
+    </div>
+    <div class="teaching-item">
+      <a href="https://cs.brown.edu/courses/csci1450/">Brown University CSCI1450 - Intro to Probability for Data Science - Fall 2018</a>
+      <div class="role">Teaching Assistant</div>
+    </div>
+  </section>
+
+  <section class="section" id="activity">
+    <h2>Professional Activity</h2>
+    <p class="activity-group">Internship at AWS AI (Summer 2023), Dataminr (2022), Bosch Research (2021), SF Tech (2018), Duke University (2016).</p>
+    <p class="activity-group">Exchange Student at KAIST (Fall 2015, Spring 2016), UCLA (Summer 2014).</p>
+    <p class="activity-group">Reviewer for CVPR, ECCV, BMVC, ICLR, ICML, NeurIPS, IJCAI, AISTATS Machine Intelligence Research.</p>
+    <p class="activity-group">Volunteer for CoRL2023 ICML2021.</p>
+  </section>
+
+  <footer class="footer">
+    <p>Template inspired by <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.</p>
+  </footer>
+
+</div>
+
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=s-wbMLJL0UljOmsC68iAg0ko39TQQWNg7PCpevha-yg&cl=ffffff&w=a"></script>
+</body>
 </html>
